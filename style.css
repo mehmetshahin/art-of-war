@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@100;300;400&display=swap');
+/*font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff; /*sayfadaki bütün yazı renkleri beyaz oldu*/
+}
+
+#welcome-sec{
+    background-image: url(war-images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 70px;
+}
+
+header{
+    /*border: 1px solid;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*img ve nav şeklinde iki çocuk var bundan dolayı ikisini aralarında eşit mesafe olacak şekilde ayırdık*/
+}
+
+header nav{
+    display: flex;
+    gap: 40px;
+    /*border: 1px solid;*/
+}
+
+header nav a{     /*navigation içerisindeki kısımların yazısının rengini atadık*/
+    color: #fff;
+    text-decoration: none;/*alt çizgiyi kaldırdık*/
+    /*border: 1px solid;*/
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav a:hover{
+    color: black;
+    text-shadow: 2px 2px 10px white;  /*ilk iki değer x ve y eksenindeki konumu 3. su bulanıklığı 4. ise renk*/
+    transition: all 0.5s;
+}
+
+header img{
+    width: 150px;
+    /*border: 1px solid;*/
+}
+
+section{
+    height: 100vh; /*hangi cihazı kullanırsa kullansın ekranın 100% kullanması için vh seçildi*/
+    border: 1px solid red;
+}
+
+.welcome-text{
+    /*border: 1px solid;*/
+    width: 90vw;/* kapladığı sayfanın yüzde 90 aldı*/
+    margin: 160px auto;
+}
+
+.welcome-text h1{
+    font-size: 50px;
+    text-align: center; /*war yazısını ortaladık*/
+}
+
+.welcome-text p{
+    font-size: 18px;
+    max-width: 600px;
+    text-align: center; /*p yi ortaladık*/
+    margin: 50px auto; /* max-width verdiğimizden dolayı p sağa kaydığından dolayı bu işlemi yaptık*/
+}
+
+/*  ABOUT KISMI-SECTION 2*/ /* # */
+
+#about{
+   background-color: black;
+   display: flex; /* yazı ile resmi yanyana getirmek için flex özelliği kullandık*/
+   gap: 100px;
+   align-items: center;
+   padding: 0 50px;
+   justify-content: center;
+}
+
+/*.about-text{
+    
+}*/
+.about-text h1{
+    font-size: 65px;
+    line-height: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+.about-text p{
+    font-family: 'Poppins';
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.about-text p span{
+    border-bottom: 2px solid red;
+    
+}
+
+#about img{
+    max-width: 450px;
+    max-height: 450px;
+    margin-top: 30px;
+}
+
+
+
+/* BATTLE | SECTION-3 KISMI */
+#battle{
+    background-image:radial-gradient(circle, rgba(0, 0, 0, 0.212) 0%,black 35%), url(war-images/sec-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading{
+    padding-top: 20px;
+}
+
+
+.heading h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+
+.heading h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.boxes{
+    width: 620px;
+    height: 500px;
+    /*border: 3px solid blue;*/
+    margin: 30px auto;
+    display: flex;/* bu özelliği vermeden önce alt alta sığmayacak şekildeydi bu özelliği verince yan yana sığmış bir şekil aldı*/
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    padding: 10px;  /*burası ve diğer alt 2 özelliği unutma*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*yukarıdan aşağıdan eşit boşluk verdik*/
+    gap: 20px;
+    font-family: 'sans-serif';
+}
+
+.box h1{
+    color: crimson;
+}
+
+.box p{
+    font-size: 17px;
+}
+
+.box:last-child{
+    width: 600px;
+}
+
+/*OPINIONS Section-4 */
+#opinions{
+    width: 100%;
+    background-image: url(war-images/sec-3.png);
+    background-repeat: no-repeat;
+    background-size: 120vw;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    
+}
+
+.opinions-text{
+    /*border: 5px solid blue;*/
+    max-width: 470px;
+    font-family:'Poppins' ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.opinions-text h1{
+    font-size: 70px;
+}
+.opinions-text p{
+    font-size: 18px;
+}
+.opinions-text button{
+    padding: 10px;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: color 0.5s, background-color 0.4s ;
+    margin-top: 40px;
+    width: 170px;
+}
+
+.opinions-text button:hover{
+    background-color: black;
+    color: red;
+    transition: all 0.5s;
+}
+
+.cards{
+    /*border: 2px solid gold;*/
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 50px;
+    justify-content: center;
+    /*margin-top: 20px;*/
+}
+
+.card{
+    width: 400px;
+    /*border: 2px solid green;*/
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card:nth-child(2){
+    align-self: flex-start;
+}
+
+.user{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-info h1{
+    color: crimson;
+    font-family:'Poppins';
+}
+/*.user-info p{
+
+}*/
+
+.gray{
+    color: gray;
+}
+
+@media (max-width:1300px){
+    #about{
+            flex-direction: column;
+            gap: 5px;
+    }
+    
+    .about-text h1{
+        font-size: 25px;
+        
+    }
+    .about-text p{
+        font-family: 'Poppins';
+        margin-top: 2px;
+        font-size: 10px;
+    }
+    
+    #about img{
+        width: 180px;  
+    }
+
+    #opinions{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .opinions-text{
+        margin: 0 10px;
+        
+    }
+
+    .card{
+       width: 300px;
+    }
+
+    .cards{
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    .opinions-text h1{
+        font-size: 40px;
+    }
+
+    .boxes{
+        width:320px;
+        height: 250px;
+    }
+
+    .box{
+        width: 300px;
+        height: 100px;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .heading h4{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+    
+    
+    .heading h1{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    
+    
+    
+    }
+
